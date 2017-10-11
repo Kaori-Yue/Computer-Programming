@@ -18,7 +18,7 @@ int main() {
         }
         if (result >= Max) {
             if (result == Max) StuI++;
-            // else StuI = 0;
+            else StuI = 1;
             Max = result;
             StuID_Max = StuID;
         }
