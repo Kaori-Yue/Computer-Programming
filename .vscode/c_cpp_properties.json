@@ -45,6 +45,7 @@
         {
             "name": "Win32",
             "includePath": [
+                "C:\\Users\\CrossKnight\\AppData\\Local\\lxss\\rootfs\\usr\\include",
                 "${workspaceRoot}"
             ],
             "defines": [
