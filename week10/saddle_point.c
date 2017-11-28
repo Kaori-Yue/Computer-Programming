@@ -1,6 +1,7 @@
 #include <limits.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <limits.h>
 /*
 3 4
 1 2 3 3
@@ -26,17 +27,22 @@ int main() {
     for (int i = 0; i < x; i++) {
         //int state = 0; // 0 nothing // 1 max // 2 min
         for (int j = 0; j < y; j++) {
-            // col
             int cmin, cmax, rmin, rmax, curr = arr[i][j];
-            cmin = cmax = rmin = rmax = arr[i][j];
+            cmin = rmin = INT_MAX;
+            cmax = rmax = INT_MIN;
+                        // col
             for (int k = 0; k < y; k++) {
+                if (j == k)
+                    continue;
                 if (cmin > arr[i][k])
                     cmin = arr[i][k];
                 if (cmax < arr[i][k])
                     cmax = arr[i][k];
             }
             // row
-            for (int k = 0; k < y; k++) {
+            for (int k = 0; k < x; k++) {
+                if (i == k)
+                    continue;
                 if (rmin > arr[k][j])
                     rmin = arr[k][j];
                 if (rmax < arr[k][j])
