@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-/*
+
 int main() {
     int n, count = 0;
     scanf("%i", &n);
     int arr[n][n];
-    int arr2[n][2]; // 0 = i | 1 = j
+    int arr2[1000000][2]; // 0 = i | 1 = j
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
             scanf("%i", &arr[i][j]);
@@ -31,8 +31,9 @@ int main() {
     for (int i = 0; i < count; i++)
         printf("%i %i %i\n", arr[arr2[i][0]][arr2[i][1]], arr2[i][0], arr2[i][1]);
 }
-*/
 
+
+/*
 int main() {
     int n;
     scanf("%i", &n);
@@ -60,3 +61,4 @@ int main() {
         printf("%i %i %i\n", arr[result[i][0]][result[i][1]], result[i][0], result[i][1]);
     }
 }
+*/
