@@ -15,6 +15,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%i %[^\n] %i %i", &books[i].id, books[i].name, &books[i].salePrice, &books[i].basePrice);
         books[i].count = 0;
+        books[i].name[strlen(books[i].name) - 1] = 0;
     }
     // printf("%s", books[2].name);
     // return;
