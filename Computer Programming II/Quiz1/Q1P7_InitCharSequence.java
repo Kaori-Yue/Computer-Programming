@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class InitCharSequence {
+public class Q1P7_InitCharSequence {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String message = scan.nextLine();

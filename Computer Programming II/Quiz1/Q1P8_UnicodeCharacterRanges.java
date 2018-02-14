@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UnicodeCharacterRanges {
+public class Q1P8_UnicodeCharacterRanges {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String message = scan.nextLine();
