@@ -1,4 +1,6 @@
-// unconfirmed
+// README
+// THIS INCOMPLETE SOURCECODE
+// 30/50 SCORE
 import java.util.Scanner;
 import java.util.Arrays;
 
