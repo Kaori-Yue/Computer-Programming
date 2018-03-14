@@ -31,7 +31,7 @@ public class Reg {
 			for (int j = 0; j < N; j++) {
 				if (students.get(j).id.equals(ID)) {
 					student = j;
-					continue;
+					break;
 				}
 			}
 			if (student == -1)
